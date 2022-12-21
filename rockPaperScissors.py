@@ -8,7 +8,7 @@ losses = 0
 ties = 0
 
 
-def winner(x, y):  # x is player and y is AI
+def update_score(x, y):  # x is player and y is AI
     global wins
     global losses
     global ties
@@ -53,18 +53,18 @@ while True:
         num = random.randint(0, 2)
         aiMove = choicesLetter[num]
         print(str(choicesFull[num]))
-        winner(playerMove, aiMove)
+        update_score(playerMove, aiMove)
     elif playerMove == 'p':
         print('Paper versus...')
         num = random.randint(0, 2)
         aiMove = choicesLetter[num]
         print(str(choicesFull[num]))
-        winner(playerMove, aiMove)
+        update_score(playerMove, aiMove)
     elif playerMove == 's':
         print('SCISSORS versus...')
         num = random.randint(0, 2)
         aiMove = choicesLetter[num]
         print(str(choicesFull[num]))
-        winner(playerMove, aiMove)
+        update_score(playerMove, aiMove)
 
 # no errors
