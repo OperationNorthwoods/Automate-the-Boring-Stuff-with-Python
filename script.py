@@ -1,12 +1,78 @@
 #!/usr/bin/env python3
 
-import sys
-while True:
-    print('Type exit to exit.')
-    response = input()
-    if response == 'exit':
-        sys.exit()
-    print('You typed ' + response + '.')
+def eggs(someParameter):
+    someParameter.append('hello')
+
+spam = [1,2,3]
+eggs(spam)
+print(spam)
+
+# print("Column 1", end="\t")
+# print("Column 2")
+
+# def spam(divideBy):
+#     return 42 / divideBy
+
+# try:
+#     print(spam(2))
+#     print(spam(12))
+#     print(spam(0))
+#     print(spam(1))
+# except ZeroDivisionError:
+#         print('Error: Invalid Argument')
+
+# def spam():
+#     global eggs
+#     eggs = 'spam'
+
+# def bacon():
+#     eggs = 'bacon'
+
+# def ham():
+#     print(eggs)
+
+# eggs = 42
+# spam()
+# bacon()
+# ham()
+# print(eggs)
+
+# def spam():
+#     global eggs
+#     eggs = 'spam'
+# eggs = 'global'
+# spam()
+# print(eggs)
+
+# def hello(name):
+#     print('Hello, ' + name)
+
+# hello('Alice')
+# hello('Bob')
+
+# num = 0
+# while num < 10:
+#     num += 1
+#     print(num)
+
+# for i in range(1, 11):
+#     print(i)
+
+# spam = input()
+# if spam == '1':
+#     print('hello')
+# elif spam == '2':
+#     print('howdy')
+# else:
+#     print('Greetings!')
+
+# import sys
+# while True:
+#     print('Type exit to exit.')
+#     response = input()
+#     if response == 'exit':
+#         sys.exit()
+#     print('You typed ' + response + '.')
 
 # import random
 # for i in range(5):
