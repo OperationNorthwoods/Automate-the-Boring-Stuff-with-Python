@@ -36,10 +36,10 @@ def update_score(x, y):  # x is player and y is AI
 
 
 print('ROCK, PAPER, SCISSORS')
-while True:
+while True: # main game loop
     print(str(wins) + ' Wins, ' + str(losses) +
           ' Losses, ' + str(ties) + ' Ties')
-    while True:
+    while True: # player input loop
         print('Enter your move: (r)ock (p)aper (s)cissors or (q)uit')
         playerMove = input()
         if playerMove == 'q':
