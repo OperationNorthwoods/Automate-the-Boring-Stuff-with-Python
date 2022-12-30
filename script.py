@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 
-import copy, sys, time, random
+import copy, sys, time, random, pprint
+
+message = "It was a bright cold day in April, and the clocks were striking thirteen."
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] +=1
+
+pprint.pprint(count)
 
 # just debugging ch4CoinFlipStreaks.py here
 # tenK_List = []
