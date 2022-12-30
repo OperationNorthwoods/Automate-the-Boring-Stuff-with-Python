@@ -1,11 +1,52 @@
 #!/usr/bin/env python3
 
-def eggs(someParameter):
-    someParameter.append('hello')
+import copy, sys, time, random
 
-spam = [1,2,3]
-eggs(spam)
-print(spam)
+# just debugging ch4CoinFlipStreaks.py here
+# tenK_List = []
+# generated_list = []
+# numberOfStreaks = 0
+
+
+# for y in range(10000):
+#     streak_counter = 0
+#     streak_letter = ''
+#     for x in range(100):
+#         counter = x
+#         if random.randint(0, 1) == 0:
+#             generated_list.append('H')
+#         else:
+#             generated_list.append('T')
+#         if counter == 99:
+#             tenK_List.append(generated_list.copy())
+#             generated_list = []
+# # print(generated_list)
+# # print(tenK_List)
+#     for x in range(100):
+#         if x == 0:
+#             streak_letter = tenK_List[y][x]
+#         if streak_letter == tenK_List[y][x]:
+#             streak_counter += 1
+#             if streak_counter == 6:
+#                 print('STREAKKKK!!!!!!!!!')
+#                 numberOfStreaks += 1
+#                 streak_counter = 0
+#         else:
+#             streak_counter = 0
+#             streak_letter = tenK_List[y][x]
+#         print(streak_counter, end=' | ')
+#         print(streak_letter, end='')
+#     time.sleep(0.1)
+#     print('There are '+str(numberOfStreaks)+' Streaks so far.')
+
+
+
+# def eggs(someParameter):
+#     someParameter.append('hello')
+
+# spam = [1,2,3]
+# eggs(spam)
+# print(spam)
 
 # print("Column 1", end="\t")
 # print("Column 2")
