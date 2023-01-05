@@ -32,7 +32,7 @@ def isWinner(board):
     for i in range(9):
         streak = 0
         streak += 1
-        if streak =
+        # if streak =
 
 # board[1][i]
 

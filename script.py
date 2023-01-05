@@ -1,16 +1,34 @@
 #!/usr/bin/env python3
 
-import copy, sys, time, random, pprint
+import copy, sys, time, random, pprint, pyperclip
 
-chessBoard = {'a1': 'b_rook', 'b1': 'b_knight', 'c1': 'b_bishop', 'd1': 'b_queen', 'e1': 'b_king', 'f1': 'b_bishop', 'g1': 'b_knight', 'h1': 'b_rook',
-              'a2': 'b_pawn', 'b2': 'b_pawn', 'c2': 'b_pawn', 'd2': 'b_pawn', 'e2': 'b_pawn', 'f2': 'b_pawn', 'g2': 'b_pawn', 'h2': 'b_pawn',
-              'a7': 'w_pawn', 'b7': 'w_pawn', 'c7': 'w_pawn', 'd7': 'w_pawn', 'e7': 'w_pawn', 'f7': 'w_pawn', 'g7': 'w_pawn', 'h7': 'w_pawn',
-              'a8': 'w_rook', 'b8': 'w_knight', 'c8': 'w_bishop', 'd8': 'w_queen', 'e8': 'w_king', 'f8': 'w_bishop', 'g8': 'w_knight', 'h8': 'w_rook'}
+# testing command line arguments
 
-for k in chessBoard.keys():
-    print(f'k={k}')
-for v in chessBoard.values():
-    print(f'v={v}')
+arg_test0 = sys.argv[0]
+arg_test1 = sys.argv[1]
+arg_test2 = sys.argv[2]
+
+print(f"This is your 0th cmd line arg: {arg_test0}")
+print(f"This is your 1st cmd line arg: {arg_test1}")
+print(f"This is your 2nd cmd line arg: {arg_test2}")
+print(sys.argv)
+
+
+# pieces = ['king', 'queen', 'rook', 'knight', 'bishop', 'pawn']
+# colors = ['b', 'w']
+# all_pieces = set(color+piece for piece in pieces for color in colors)
+
+# print(all_pieces)
+
+# chessBoard = {'a1': 'b_rook', 'b1': 'b_knight', 'c1': 'b_bishop', 'd1': 'b_queen', 'e1': 'b_king', 'f1': 'b_bishop', 'g1': 'b_knight', 'h1': 'b_rook',
+#               'a2': 'b_pawn', 'b2': 'b_pawn', 'c2': 'b_pawn', 'd2': 'b_pawn', 'e2': 'b_pawn', 'f2': 'b_pawn', 'g2': 'b_pawn', 'h2': 'b_pawn',
+#               'a7': 'w_pawn', 'b7': 'w_pawn', 'c7': 'w_pawn', 'd7': 'w_pawn', 'e7': 'w_pawn', 'f7': 'w_pawn', 'g7': 'w_pawn', 'h7': 'w_pawn',
+#               'a8': 'w_rook', 'b8': 'w_knight', 'c8': 'w_bishop', 'd8': 'w_queen', 'e8': 'w_king', 'f8': 'w_bishop', 'g8': 'w_knight', 'h8': 'w_rook'}
+
+# for k in chessBoard.keys():
+#     print(f'k={k}')
+# for v in chessBoard.values():
+#     print(f'v={v}')
 
 # message = "It was a bright cold day in April, and the clocks were striking thirteen."
 # count = {}

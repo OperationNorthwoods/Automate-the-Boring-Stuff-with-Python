@@ -91,3 +91,5 @@ def isValidChessBoard(board):
 print(isValidChessBoard(chessBoard))
 
 # works but this code isn't very clean
+# https://stackoverflow.com/questions/60028942/automate-the-boring-stuff-chapter-5-chess-dictionary-validator
+# check the above link for much better code, refactor later
