@@ -9,11 +9,20 @@ TEXT = {'agree': """Yes, I agree. That sounds fine to me.""",
 
 
 # exit the program if 0 or more that 1 cmd line args entered
-if len(sys.argv) != 2:
+
+# if len(sys.argv) != 2:
+#     print(f"Use this format\"scriptname.py [keyphrase]\". Only 1 argument is accepted.")
+#     sys.exit()
+
+# keyphrase = sys.argv[1]
+# ^^^^ old code above ^^^^
+
+try:
+    _, keyphrase = sys.argv
+except:
     print(f"Use this format\"scriptname.py [keyphrase]\". Only 1 argument is accepted.")
     sys.exit()
-
-keyphrase = sys.argv[1]
+# refactored with multiple assignment trick learned from https://treyhunner.com/2018/03/tuple-unpacking-improves-python-code-readability/
 
 if keyphrase in TEXT:
     print('Copied to clipboard.')
