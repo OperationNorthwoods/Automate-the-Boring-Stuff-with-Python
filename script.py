@@ -1,17 +1,65 @@
 #!/usr/bin/env python3
 
-import copy, sys, time, random, pprint, pyperclip
+import copy
+import sys
+import time
+import random
+import pprint
+import pyperclip
 
-# testing command line arguments
 
-arg_test0 = sys.argv[0]
-arg_test1 = sys.argv[1]
-arg_test2 = sys.argv[2]
 
-print(f"This is your 0th cmd line arg: {arg_test0}")
-print(f"This is your 1st cmd line arg: {arg_test1}")
-print(f"This is your 2nd cmd line arg: {arg_test2}")
-print(sys.argv)
+# tableData = [['apples', 'blueberries', 'grapes', 'blackberries'],
+#              ['chicken', 'bacon', 'turkey', 'steak'],
+#              ['avacado', 'pistachio', 'peanut', 'oatmeal']]
+
+# justify_char = [0, 0, 0]
+
+
+# def cal_just_amt(list):
+#     for o in range(len(list)):
+#         print('outer: ' + str(o))
+#         for i in range(len(list[o])):
+#             print('inner: ' + str(i))
+#             if justify_char[o] == 0:
+#                 justify_char[o] = len(list[o][i])
+#             elif justify_char[o] < len(list[o][i]):
+#                 justify_char[o] = len(list[o][i])
+
+
+# cal_just_amt(tableData)
+
+# print(justify_char)
+
+# # def print_table(list):
+# #     # for o in range(len(list)):
+# #     #     print('outer: ' + str(o))
+# #         for i in range(len(list[])):
+# #             print('inner: ' + str(i))
+# #             for o2 in range(len(list)):
+# #                 print('outer2: ' + str(o2))
+
+
+# def print_table(list):
+#     for i in range(len(list[0])):
+#         for o in range(len(list)):
+#             print(list[o][i].rjust(justify_char[o]), end='\t')
+#             if o == (len(list)-1):
+#                 print('\n')
+
+
+# print_table(tableData)
+
+# # testing command line arguments
+
+# arg_test0 = sys.argv[0]
+# arg_test1 = sys.argv[1]
+# arg_test2 = sys.argv[2]
+
+# print(f"This is your 0th cmd line arg: {arg_test0}")
+# print(f"This is your 1st cmd line arg: {arg_test1}")
+# print(f"This is your 2nd cmd line arg: {arg_test2}")
+# print(sys.argv)
 
 
 # pieces = ['king', 'queen', 'rook', 'knight', 'bishop', 'pawn']
@@ -75,7 +123,6 @@ print(sys.argv)
 #         print(streak_letter, end='')
 #     time.sleep(0.1)
 #     print('There are '+str(numberOfStreaks)+' Streaks so far.')
-
 
 
 # def eggs(someParameter):

@@ -1,4 +1,4 @@
-#english to pig latin
+# english to pig latin
 message = input("Enter the English message to translater into Pig Latin: ")
 
 vowels = ('a', 'e', 'i', 'o', 'u', 'y')
@@ -50,4 +50,4 @@ for word in message.split():
 print(' '.join(pigLatin))
 
 
-#typed out from book
+#typed out from book, no changes made
