@@ -27,7 +27,7 @@ for word in message.split():
 
     # Seperate the consonants at the start of this word:
     prefixConsonants = ''
-    while len(word) > 0 and not word[0] in VOWELS:
+    while len(word) > 0 and not word[0] in vowels:
         prefixConsonants += word[0]
         word = word[1:]
     
