@@ -9,11 +9,53 @@ import pyperclip
 import re
 from pathlib import Path
 import os
-import shelve 
+import shelve
 
-phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
-mo = phoneNumRegex.findall('My number is 123-456-7890.')
-print('phone number found: ' + mo[len(mo) - 1])
+# ==========================================================
+
+# def recur():
+#     pathy = Path(Path.home()/'Documents'/'blah.txt')
+#     for i in range(20):
+#         with open(pathy, 'w') as create:
+#             create.write(str(i) + "\n")
+
+
+# recur()
+# ^^^^ different output, numbers DO overwrite ^^^^^
+# 'with open' auto closes btw
+
+# === === === ===
+
+# def recur():
+#     pathy = Path(Path.home()/'Documents'/'blah.txt')
+#     with open(pathy, 'w') as create:
+#         for i in range(10):
+#             create.write(str(i) + "\n")
+#             create.flush()
+
+# recur()
+## ^^^^ same output with this code, numbers DO NOT overwrite ^^^^
+
+# === === === ===
+
+# def recur():
+#     pathy = Path(Path.home()/'Documents'/'blah.txt')
+#     create = open(pathy, 'w')
+
+#     for i in range(20):
+#         create.write(str(i) + "\n")
+
+#     create.close()
+
+# recur()
+## exploring 'w' mode in write() ^^^^ outputs a list of numbers not the last number ^^^^
+# figuring out when it does and doesn't overwrite
+
+# ==========================================================
+
+# phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+# mo = phoneNumRegex.findall('My number is 123-456-7890.')
+# print('phone number found: ' + mo[len(mo) - 1])
 
 
 # def isPhoneNumber(text):
