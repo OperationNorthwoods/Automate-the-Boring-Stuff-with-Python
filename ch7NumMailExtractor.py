@@ -1,10 +1,8 @@
-import pyperclip
+import pyperclip as py
 import re
 
 # Phone Number and Email extractor
 # Guided project from the book
-
-py = pyperclip
 
 phoneRegex = re.compile(r'''(
 (\d{3}|\(\d{3}\))?                      # area code (optional)
