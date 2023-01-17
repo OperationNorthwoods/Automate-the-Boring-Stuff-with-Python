@@ -10,6 +10,9 @@ import re
 from pathlib import Path
 import os
 import shelve
+import shutil
+import send2trash
+import zipfile
 
 
 
