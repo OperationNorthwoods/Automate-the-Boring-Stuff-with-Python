@@ -13,8 +13,13 @@ import shelve
 import shutil
 import send2trash
 import zipfile
+import logging              # skipped this section in ATBSWP
 
-
+for quizNum in range(35):
+    # create the quiz and answer key files
+    quizFile = print('capitalQuiz'+str(quizNum + 1).zfill(3)+'.txt')
+    answerKeyFile = print('capitalQuiz_answers'+str(quizNum + 1).zfill(3)+'.txt')
+# modifying ch9RandQuiz.py testing
 
 # ==========================================================
 
